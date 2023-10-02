@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Force-Directed Graph</title>
-  <script
-          src="//unpkg.com/react/umd/react.production.min.js"></script>
-  <script
-          src="//unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
-  <script src="//unpkg.com/@babel/standalone"></script>
-  <script src="//unpkg.com/react-force-graph-3d"></script>
-  <!-- <script          src="https://superpower-buildthing.netlify.app/graphA.tsx"></script> -->
-  <!-- <script src="main.jsx"> </script> -->
-  <script type="text/jsx">
-    fetch("https://superpower-buildthing.netlify.app/mainData.json")
+fetch("https://superpower-buildthing.netlify.app/mainData.json")
   .then((res) => res.json())
   .then((graphData) => {
     // const { ForceGraph2D } = ReactForceGraph;
@@ -130,23 +115,3 @@
 
     ReactDOM.render(<MyForceGraph />, document.getElementById("app"));
   });
-
-  </script>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    #app {
-      width: 100vw;
-      height: 100vh;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="app"></div>
-</body>
-
-</html>
